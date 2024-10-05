@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dokumens",
+  "info": {
+    "singularName": "dokumen",
+    "pluralName": "dokumens",
+    "displayName": "dokumen"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "gambar": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "dokuman"
+    }
+  }
+}

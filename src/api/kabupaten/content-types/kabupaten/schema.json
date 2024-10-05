@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kabupatens",
+  "info": {
+    "singularName": "kabupaten",
+    "pluralName": "kabupatens",
+    "displayName": "kabupaten"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "svg_path": {
+      "type": "text"
+    },
+    "id_provinsi": {
+      "type": "integer"
+    },
+    "id_kabkot": {
+      "type": "integer"
+    }
+  }
+}

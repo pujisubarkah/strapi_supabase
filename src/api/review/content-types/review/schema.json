@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "singularName": "review",
+    "pluralName": "reviews",
+    "displayName": "Review"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Reviewier_name": {
+      "type": "string"
+    },
+    "Review": {
+      "type": "text"
+    },
+    "dokuman": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::dokumen.dokumen",
+      "inversedBy": "reviews"
+    }
+  }
+}
